@@ -6,6 +6,7 @@ en:
     home: "Home"
     help: "Help"
     about: "About"
+    public: "Ruby on Rails Tutorial Sample App"
   the_book_help_rubyOnrails:
     title_home: "This is the home page for the"
     title_home: "This is home page"

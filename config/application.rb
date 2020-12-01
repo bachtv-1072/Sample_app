@@ -17,8 +17,5 @@ module SimpleApp
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    Bundler.require(*Rails.groups)
-    Config::Integration::Rails::Railtie.preload
-    config.time_zone = Settings.time_zone
   end
 end
