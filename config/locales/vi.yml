@@ -1,0 +1,15 @@
+vi:
+  language:
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
+  title:
+    home: "Trang chủ"
+    help: "Hỗ trợ"
+    about: "Về chúng tôi"
+  the_book_help_rubyOnrails:
+    title_home: "Đây là trang chủ"
+    title_about: "Đây là trang về chúng tôi"
+    title_help: "Đây là trang hỗ trợ"
+  book:
+    book_1: "Cuốn hướng dẫn Ruby on Rails"
+    book_2: "Cuốn sách trợ giúp Ruby on Rails"
