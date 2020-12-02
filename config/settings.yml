@@ -1,0 +1,10 @@
+validation:
+  user:
+    size:
+      name: 50
+      email: 255
+      password: 6
+    format:
+      email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
+image:
+  link_1: "https://rubyonrails.org/images/rails-logo.svg"

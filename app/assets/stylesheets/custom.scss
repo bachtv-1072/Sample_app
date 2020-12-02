@@ -36,7 +36,9 @@ section {
 textarea {
   resize: vertical;
 }
-
+.imageRails{
+  width: 200px;
+}
 // Body
 body {
   // Header
@@ -54,7 +56,7 @@ body {
         }
       }
     }
-    
+
     #logo {
       float: left;
       margin-right: 10px;
