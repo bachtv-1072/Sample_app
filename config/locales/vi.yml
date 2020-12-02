@@ -1,8 +1,11 @@
 vi:
+  logo: "sample app"
   language:
+    languages: "Ngôn ngữ"
     english: "Tiếng Anh"
     vietnamese: "Tiếng Việt"
   title:
+    welcome: "Chào mừng bạn đến với Sample App"
     home: "Trang chủ"
     help: "Hỗ trợ"
     about: "Về chúng tôi"
@@ -14,3 +17,6 @@ vi:
   book:
     book_1: "Cuốn hướng dẫn Ruby on Rails"
     book_2: "Cuốn sách trợ giúp Ruby on Rails"
+  users:
+    user_new: "Đăng kí"
+    login: "Đăng nhập"

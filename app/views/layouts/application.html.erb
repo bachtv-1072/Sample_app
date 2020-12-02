@@ -7,10 +7,13 @@
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
-
   <body>
+  <%= render "layouts/header" %>
+  <div class="container">
     <%= link_to t("language.english"), locale: "en" %>
     <%= link_to t("language.vietnamese"), locale: "vi" %>
     <%= yield %>
+    <%= render "layouts/footer" %>
+  </div> 
   </body>
 </html>
