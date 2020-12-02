@@ -1,8 +1,11 @@
 en:
+  logo: "sample app"
   language:
+    languages: "Languages"
     english: "English"
     vietnamese: "Vietnamese"
   title:
+    welcome: "Welcome to Sample App"
     home: "Home"
     help: "Help"
     about: "About"
@@ -15,3 +18,6 @@ en:
   book:
     book_1: "Ruby on Rails Tutorial"
     book_2: "Rails Tutorial Help"
+  users:
+    user_new: "Signup now"
+    login: "Login"
