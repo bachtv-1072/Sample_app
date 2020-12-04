@@ -12,6 +12,11 @@
   <div class="container">
     <%= link_to t("language.english"), locale: "en" %>
     <%= link_to t("language.vietnamese"), locale: "vi" %>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>">
+        <%= message %>
+      </div>
+    <% end %>
     <%= yield %>
     <%= render "layouts/footer" %>
   </div> 

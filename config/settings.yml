@@ -8,3 +8,4 @@ validation:
       email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
 image:
   link_1: "https://rubyonrails.org/images/rails-logo.svg"
+  link_2: "https://rubyonrails.org/"
