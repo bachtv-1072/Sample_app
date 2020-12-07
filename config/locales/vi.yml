@@ -20,3 +20,16 @@ vi:
   users:
     user_new: "Đăng kí"
     login: "Đăng nhập"
+  signup:
+    label:
+      name: "Ten dang nhap"
+      email: "Dia chi email"
+      password: "Mat khau"
+      password_comfirm: "Mat khau xac nhan"
+      submit: "Tao tai khoan"
+    message:
+      messages_count: "Ban co"
+      error: "loi"
+      success: "Chao mung ban den sample app"
+      fail: "Dang ki that bai"
+      login: "Ban can dang nhap/dang ki tai khoan"

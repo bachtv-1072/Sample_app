@@ -19,5 +19,18 @@ en:
     book_1: "Ruby on Rails Tutorial"
     book_2: "Rails Tutorial Help"
   users:
-    user_new: "Signup now"
+    user_new: "Signup"
     login: "Login"
+  signup:
+    label:
+      name: "User name"
+      email: "Email"
+      password: "Password"
+      password_comfirm: "Password Comfirmation"
+      submit: "Create account"
+    message:
+      messages_count: "The form contains"
+      error: "error"
+      success: "Welcome to the Sample App!"
+      fail: "Signup fails!"
+      login: "You need signup/login"
