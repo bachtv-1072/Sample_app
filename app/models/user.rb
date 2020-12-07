@@ -8,6 +8,7 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: Settings.validation.user.size.password }
 
   before_save :downcase_email
+  
   has_secure_password
 
   private

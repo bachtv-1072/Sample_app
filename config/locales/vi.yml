@@ -18,8 +18,11 @@ vi:
     book_1: "Cuốn hướng dẫn Ruby on Rails"
     book_2: "Cuốn sách trợ giúp Ruby on Rails"
   users:
+    account: "Tai khoan"
+    user: "Ca nhan"
     user_new: "Đăng kí"
     login: "Đăng nhập"
+    profile: "Trang ca nhan"
   signup:
     label:
       name: "Ten dang nhap"
@@ -33,3 +36,13 @@ vi:
       success: "Chao mung ban den sample app"
       fail: "Dang ki that bai"
       login: "Ban can dang nhap/dang ki tai khoan"
+  login:
+    title: "Dang nhap"
+    label:
+      email: "Ten tai khoan/dia chi email"
+      password: "Mat khau"
+      submit: "Dang nhap"
+    message:
+      danger: "Loi dang nhap"
+  logout: "Dang xuat"
+  settings: "Chinh sua"
