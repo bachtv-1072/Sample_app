@@ -67,6 +67,19 @@ en:
       success: "Success"
       danger: "Fail"
     subject: "Account activation"
+    reset_password: "Reset password"
   mailer:
     activation: "Activation"
     content: "Welcome to the Sample App! Click on the link below to activate your account"
+    reset_password:
+      title: "Password reset"
+      message_1: "To reset your password click the link below:"
+      message_2: "This link will expire in two hours."
+  password_reset:
+    title: "(Forgot password)"
+    create:
+      message:
+        flash: "You need to check your email"
+        danger: "Can't send to your email"
+    update:
+      message: "Can't be blank"

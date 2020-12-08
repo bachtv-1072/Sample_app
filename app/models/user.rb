@@ -2,7 +2,7 @@ class User < ApplicationRecord
   USERS_PARAMS = %i(name email password password_confirmation).freeze
   VALID_EMAIL_REGEX = Settings.validation.user.format.email
 
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   validates :name, presence: true, length: { maximum: Settings.validation.user.size.name }
   validates :email, presence: true, length: { maximum: Settings.validation.user.size.email },
@@ -31,7 +31,7 @@ class User < ApplicationRecord
 
   def remember
     self.remember_token = User.new_token
-    update_attribute :remember_digest, User.digest remember_token
+    update_attribute :remember_digest, User.digest(remember_token)
   end
 
   def authenticated? attribute, token
@@ -52,6 +52,20 @@ class User < ApplicationRecord
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_attribute :reset_digest, User.digest(reset_token)
+    update_attribute :reset_sent_at, Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.time_active.hours.ago
   end
 
   private

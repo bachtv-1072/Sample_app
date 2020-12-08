@@ -13,3 +13,4 @@ session:
   remember: "1"
 panigate:
   users: 10
+time_active: 2
