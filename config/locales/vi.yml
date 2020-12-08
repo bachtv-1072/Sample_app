@@ -42,6 +42,7 @@ vi:
       email: "Ten tai khoan/dia chi email"
       password: "Mat khau"
       submit: "Dang nhap"
+      rememberme: "Luu mat khau"
     message:
       danger: "Loi dang nhap"
   logout: "Dang xuat"

@@ -43,6 +43,7 @@ en:
       email: "Email"
       password: "Password"
       submit: "Submit"
+      rememberme: "Remember me"
     message:
       danger: "Login fail"
   logout: "Logout"
