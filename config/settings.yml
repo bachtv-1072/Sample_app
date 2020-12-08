@@ -11,3 +11,5 @@ image:
   link_2: "https://rubyonrails.org/"
 session:
   remember: "1"
+panigate:
+  users: 10

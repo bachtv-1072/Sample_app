@@ -6,7 +6,7 @@
         <li><%= link_to t("title.home"), root_path, class: "nav-link" %></li>
         <li><%= link_to t("title.help"), help_path, class: "nav-link"  %></li>
         <% if logged_in? %>
-          <li><%= link_to t("users.user"), "#", class: "nav-link" %></li>
+          <li><%= link_to t("index.link"), users_path, class: "nav-link" %></li>
           <li class="dropdown">
             <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown", class: "nav-link" do %>
               <%= t "users.account" %>
@@ -14,7 +14,7 @@
             <% end %>
             <ul class="dropdown-menu">
               <li><%= link_to t("users.profile"), current_user %></li>
-              <li><%= link_to t(".settings"), "#" %></li>
+              <li><%= link_to t(".settings"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to t(".logout"), logout_path, method: :delete %>

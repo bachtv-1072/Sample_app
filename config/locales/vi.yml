@@ -47,3 +47,15 @@ vi:
       danger: "Loi dang nhap"
   logout: "Dang xuat"
   settings: "Chinh sua"
+  update:
+    title: "Chinh sua"
+    submit: "Sua"
+    message:
+      success: "Chinh sua thanh cong"
+      fail: "Chinh sua that bai"
+  index:
+    link: "Nguoi dung"
+    title: "Tat ca nguoi dung"
+  comfirm_login:
+    message: "Can dang nhap truoc"
+    comfirm: "Ban co chac chan xoa?"
