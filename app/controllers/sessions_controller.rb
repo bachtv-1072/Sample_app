@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       log_in user
       check_remember params[:session][:remember_me], user
       flash[:success] = t "signup.message.success"
-      redirect_to user
+      redirect_back_or user
     else
       flash[:danger] = t "login.message.danger"
       render :new

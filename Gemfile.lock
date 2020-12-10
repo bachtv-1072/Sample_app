@@ -66,6 +66,9 @@ GEM
       msgpack (~> 1.0)
     bootsnap (1.5.1-java)
       msgpack (~> 1.0)
+    bootstrap4-kaminari-views (1.0.1)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
     builder (3.2.4)
     capybara (3.34.0)
       addressable
@@ -126,6 +129,8 @@ GEM
       dry-initializer (~> 3.0)
       dry-schema (~> 1.5, >= 1.5.2)
     erubi (1.10.0)
+    faker (2.14.0)
+      i18n (>= 1.6, < 2)
     ffi (1.13.1)
     ffi (1.13.1-java)
     ffi (1.13.1-x64-mingw32)
@@ -138,6 +143,18 @@ GEM
     jaro_winkler (1.5.4-java)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     listen (3.3.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -313,10 +330,13 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.13)
   bootsnap (>= 1.4.2)
+  bootstrap4-kaminari-views
   capybara (>= 2.15)
   config
   dotenv-rails
+  faker
   jbuilder (~> 2.7)
+  kaminari
   listen (~> 3.2)
   mysql2
   pry-rails

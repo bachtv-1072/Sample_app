@@ -24,6 +24,7 @@ en:
     user_new: "Signup"
     login: "Login"
     profile: "Profile"
+    delete: "Delete"
   signup:
     label:
       name: "User name"
@@ -48,3 +49,15 @@ en:
       danger: "Login fail"
   logout: "Logout"
   settings: "Setting"
+  update:
+    title: "Update"
+    submit: "Update"
+    message:
+      success: "Success"
+      fail: "Fails"
+  index:
+    link: "Users"
+    title: "All users"
+  comfirm_login:
+    message: "please login first"
+    comfirm: "Are you sure?"

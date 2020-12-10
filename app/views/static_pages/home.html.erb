@@ -4,6 +4,6 @@
   <h2>
     <%= t "the_book_help_rubyOnrails.title_home" %>
   </h2>
-  <%= link_to t("users.user_new"), signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to t("users.user_new"), signup_path, class: "btn btn-lg btn-primary" unless logged_in? %>
 </div>
 <%= link_to image_tag(Settings.image.link_1, class: "imageRails"), Settings.image.link_2 %>

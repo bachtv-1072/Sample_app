@@ -13,6 +13,9 @@ gem "jbuilder", "~> 2.7"
 gem "rails-i18n"
 gem "bcrypt", "3.1.13"
 gem "config"
+gem "kaminari"
+gem "bootstrap4-kaminari-views"
+gem "faker"
 gem "bootsnap", ">= 1.4.2", require: false
 group :development, :test do
   gem "rubocop", "~> 0.74.0", require: false
