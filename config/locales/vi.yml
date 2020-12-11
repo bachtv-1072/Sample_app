@@ -1,4 +1,5 @@
 vi:
+  getting: "Hi"
   logo: "sample app"
   language:
     languages: "Ngôn ngữ"
@@ -59,3 +60,11 @@ vi:
   comfirm_login:
     message: "Can dang nhap truoc"
     comfirm: "Ban co chac chan xoa?"
+  activation:
+    message:
+      success: "Thanh cong"
+      danger: "That bai"
+    subject: "Tai khoan duoc kich hoat"
+  mailer:
+    activation: "Kich hoat"
+    content: "Chào mừng bạn đến với Sample app Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn"

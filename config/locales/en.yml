@@ -1,5 +1,6 @@
 en:
   logo: "sample app"
+  getting: "Xin chao"
   language:
     languages: "Languages"
     english: "English"
@@ -61,3 +62,11 @@ en:
   comfirm_login:
     message: "please login first"
     comfirm: "Are you sure?"
+  activation:
+    message:
+      success: "Success"
+      danger: "Fail"
+    subject: "Account activation"
+  mailer:
+    activation: "Activation"
+    content: "Welcome to the Sample App! Click on the link below to activate your account"
