@@ -15,6 +15,7 @@ gem "bcrypt", "3.1.13"
 gem "config"
 gem "kaminari"
 gem "bootstrap4-kaminari-views"
+gem "active_storage_validations", "0.8.2"
 gem "faker"
 gem "bootsnap", ">= 1.4.2", require: false
 group :development, :test do

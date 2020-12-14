@@ -6,6 +6,14 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "comfirm_login.message"
+    redirect_to login_url
+  end
+
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end

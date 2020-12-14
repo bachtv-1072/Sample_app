@@ -14,3 +14,6 @@ session:
 panigate:
   users: 10
 time_active: 2
+content: 140
+image:
+  file_image:  [image/jpeg, image/gif, image/png]

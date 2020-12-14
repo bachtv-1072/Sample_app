@@ -4,6 +4,8 @@ class User < ApplicationRecord
 
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true, length: { maximum: Settings.validation.user.size.name }
   validates :email, presence: true, length: { maximum: Settings.validation.user.size.email },
                     format: { with: VALID_EMAIL_REGEX }, uniqueness: true
@@ -67,7 +69,7 @@ class User < ApplicationRecord
   def password_reset_expired?
     reset_sent_at < Settings.time_active.hours.ago
   end
-
+  
   private
 
   def downcase_email
