@@ -83,3 +83,15 @@ en:
         danger: "Can't send to your email"
     update:
       message: "Can't be blank"
+  micropost:
+    title: "Micropost"
+    message:
+      success: "Micropost created succsess"
+      delete: "Micropost deleted succsess"
+    image:
+      message: "Image must to fomat"
+      size: "Image must to less 10MB"
+    content_1: "Posted"
+    content_2: "ago."
+    delete: "delete"
+    placholder: "Compose new micropost..."

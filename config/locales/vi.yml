@@ -81,3 +81,15 @@ vi:
         danger: "Khong the gui email cho ban"
     update:
       message: "Khong de trong"
+  micropost:
+    title: "Bai dang"
+    message:
+      success: "Bai dang thanh cong"
+      delete: "Xoa thanh cong"
+    image:
+      message: "Hinh anh phai dung dinh dang"
+      size: "Hinh anh phai nho hon 10MB"
+    content_1: "Da dang"
+    content_2: "truoc."
+    delete: "Xoa"
+    placholder: "Nhap bai dang moi..."

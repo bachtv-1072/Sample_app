@@ -47,7 +47,7 @@ class PasswordResetsController < ApplicationController
   end
 
   def valid_user
-    return if @user&.activated? && @user&.authenticated? :reset, params[:id]
+    return if @user&.activated? && @user&.authenticated?(:reset, params[:id])
 
     flash[:danger] = t "signup.message.login"
     redirect_to root_url

@@ -1,9 +1,26 @@
 <% provide :title, t("title.home") %>
-<div class="center jumbotron">
-  <h1> <%= t "title.welcome" %> </h1>
-  <h2>
-    <%= t "the_book_help_rubyOnrails.title_home" %>
-  </h2>
-  <%= link_to t("users.user_new"), signup_path, class: "btn btn-lg btn-primary" unless logged_in? %>
+<% if logged_in? %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <%= render "shared/user_info" %>
+    </section>
+    <section class="micropost_form">
+      <%= render "shared/micropost_form" %>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <h3> <%= t "micropost.title" %> </h3>
+    <%= render "shared/feed" %>
+  </div>
 </div>
-<%= link_to image_tag(Settings.image.link_1, class: "imageRails"), Settings.image.link_2 %>
+<% else %>
+  <div class="center jumbotron">
+    <h1> <%= t "title.welcome" %> </h1>
+    <h2>
+      <%= t "the_book_help_rubyOnrails.title_home" %>
+    </h2>
+    <%= link_to t("users.user_new"), signup_path, class: "btn btn-lg btn-primary" unless logged_in? %>
+  </div>
+  <%= link_to image_tag(Settings.image.link_1, class: "imageRails"), Settings.image.link_2 %>
+<% end %>
