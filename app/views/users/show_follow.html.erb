@@ -1,0 +1,23 @@
+<% provide :title, @title %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1> <%= @user.name %> </h1>
+      <span> <%= link_to t("post.view.my_profile"), @user %> </span>
+      <span> <b> <%= t "post.view.micropost" %> </b>
+      <%= @user.microposts.size %></span>
+    </section>
+    <section class="stats">
+      <%= render "shared/stats" %>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <h3><%= @title %></h3>
+    <% if @users.any? %>
+      <ul class="users follow">
+        <%= render @users %>
+      </ul>
+      <%= paginate @users, theme: "twitter-bootstrap-4" %>
+    <% end %>
+  </div>
+</div>

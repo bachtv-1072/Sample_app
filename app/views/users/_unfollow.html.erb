@@ -1,0 +1,3 @@
+<%= form_for @find_current_user, remote: true, method: :delete do |f| %>
+  <%= f.submit t("follow.btn_unfollow"), class: "btn btn-danger" %>
+<% end %>
